@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">JSON Generator</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="label_name">Name</string>
+    <string name="label_count">Count</string>
+    <string name="title_connection_method">Connection Method</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_flag">Flag</string>
+    <string name="hint_info">Info</string>
+    <string name="hint_payload">Payload</string>
+    <string name="hint_sni">SNI</string>
+    <string name="hint_dnstt">DNSTT</string>
+    <string name="hint_custom_proxy">Custom Proxy</string>
+    <string name="add_payload">Add Payload</string>
+    <string name="text_rocket">rocket</string>
+    <string name="hint_proxy_name">Proxy Name</string>
+    <string name="hint_proxy_port">Proxy Port</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_openssh">OpenSSH</string>
+    <string name="hint_dropbear">Dropbear</string>
+    <string name="hint_public_key">Public Key</string>
+    <string name="hint_name_server">Name Server</string>
+    <string name="title_authentication">Authentication</string>
+    <string name="title_dnstt_configuration">DNSTT Configuration</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="version">Version</string>
+    <string name="hint_message">Message</string>
+</resources>

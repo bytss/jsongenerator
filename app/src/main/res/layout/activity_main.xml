@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        card_view:cardCornerRadius="2.0dip"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/tv_server_count"
+                android:text="@string/label_count"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/sp_server"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.0" />
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ib_add_server"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_plus_circle"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_edit_server"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:src="@drawable/ic_pencil_circle"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_delete_server"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete_circle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        card_view:cardCornerRadius="2.0dip">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/label_count"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/tv_network_count"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/sp_network"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.0" />
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ib_add_network"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_plus_circle"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_edit_network"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:src="@drawable/ic_pencil_circle"/>
+
+                    <ImageButton
+                        android:id="@+id/ib_delete_network"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete_circle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="@string/action_save"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_save"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_json"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+

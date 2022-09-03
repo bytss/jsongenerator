@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppAlertDialog" parent="@style/Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/textColor</item>
+        <item name="android:windowBackground">@color/card_background</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonTint">@color/axe</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ADButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ADButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/ADButtonStyle</item>
+    </style>
+
+    <style name="ADButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/axe</item>
+    </style>
+
+</resources>
